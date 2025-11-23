@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxora Feed</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home-body">
+
+  <header class="main-header">
+    <div class="brand">Luxora</div>
+    <div id="user-display" class="user-display"></div>
+    <button id="logout-btn" class="logout-btn">Logout</button>
+  </header>
+
+  <section class="post-create">
+    <textarea id="post-text" placeholder="Write something..."></textarea>
+    <input type="text" id="post-image" placeholder="Image URL (optional)" />
+    <button id="post-btn" class="post-btn">Post</button>
+  </section>
+
+  <section class="post-controls">
+    <input type="text" id="search-bar" placeholder="Search posts..." />
+    <select id="sort-select">
+      <option value="latest">Latest First</option>
+      <option value="oldest">Oldest First</option>
+      <option value="liked">Most Liked</option>
+    </select>
+  </section>
+
+  <section id="posts-feed" class="posts-feed"></section>
+
+  <div id="edit-modal" class="modal">
+    <div class="modal-content">
+      <textarea id="edit-text"></textarea>
+      <input id="edit-image" placeholder="Image URL" />
+      <button id="save-edit-btn">Save</button>
+      <button id="cancel-edit-btn" class="cancel-btn">Cancel</button>
+    </div>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
